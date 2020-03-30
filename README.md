@@ -12,7 +12,7 @@ Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (sho
 
 ![](images/silica_site.png)
 
-Here, ∆<strong>x</strong> is the deviation from the minima, <strong>H</strong> is the hessian computed at the minima, and E<sub>0</sub> is the energy of the minima.
+Here, ∆<strong>x</strong> is the deviation from the minima, <strong>H</strong> is the hessian computed at the minima, and <em>E</em><sub>0</sub> is the energy of the minima.
 
 $\delta$
 
