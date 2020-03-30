@@ -16,3 +16,5 @@ Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (sho
 # This is an <h1> tag
 ## This is an <h2> tag
 ###### This is an <h6> tag
+
+$$\begin{pmatrix}a & b\\\ c & d\end{pmatrix}$$
