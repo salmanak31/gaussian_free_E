@@ -8,3 +8,6 @@ Gaussian09 has inbuilt features to calculate the free energies (translational, r
 ![](images/silica_site.png)
 
 Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (shown in red) are held fixed.
+
+
+\mathcal{W}(A,f) = (T,\bar{f})
