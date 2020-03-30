@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # gaussian_free_E
 scripts to perform frequency analysis and compute free energy of surface species (species with constrained atoms) in Gaussian
 
@@ -8,14 +7,22 @@ Gaussian09 has inbuilt features to calculate the free energies (translational, r
 
 ![](images/silica_site.png)
 
-Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (shown in red) are held fixed.
+Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (shown in red) are held fixed. To calculate the vibrational free energy we expand the enregy around the minimum (structure corresponding to a local minima) as follows:
 
 
-\mathcal{W}(A,f) = (T,\bar{f})
+![](images/silica_site.png)
+
+Here, \delta x
+
+$\delta$
+
+$-b \pm \sqrt{b^2 - 4ac} \over 2a$
+$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}$
+$\forall x \in X, \quad \exists y \leq \epsilon$
+
 
 
 # This is an <h1> tag
 ## This is an <h2> tag
 ###### This is an <h6> tag
 
-$$\begin{pmatrix}a & b\\\ c & d\end{pmatrix}$$
