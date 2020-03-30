@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # gaussian_free_E
 scripts to perform frequency analysis and compute free energy of surface species (species with constrained atoms) in Gaussian
 
