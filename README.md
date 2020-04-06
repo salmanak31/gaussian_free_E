@@ -16,7 +16,7 @@ Gaussian09 has inbuilt features to calculate the free energies (translational, r
 Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (shown in red) are held fixed. To calculate the vibrational free energy we expand the enregy around the minimum (structure corresponding to a local minima) as follows:
 
 
-<img src="images/E_expansion.png" width=100>
+<img src="images/E_expansion.png" width=500>
 <!-- ![](images/E_expansion.png) -->
 
 Here, ∆<strong>x</strong> is the deviation from the minima, <strong>H</strong> is the hessian computed at the minima, and <em>E</em><sub>0</sub> is the energy of the minima. H is written as follows:
