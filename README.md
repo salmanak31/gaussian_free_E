@@ -43,10 +43,13 @@ Here, <strong>H</strong><sub>MW</sub> is the reduced mass-weighted hessian and <
 
 <img src="images/mass_matrix.png" width=500>.
 
-Here, <em>M</em><sub>i</sub> is the mass of the atom corresponding to coordinate <em>x</em><sub>i</sub>.
+Here, <em>M</em><sub>i</sub> is the mass of the atom corresponding to coordinate <em>x</em><sub>i</sub>. Following this the normal vibrational frequencies can be calculated using the eigenvalues of <strong>H</strong><sub>MW</sub> 
 
-Eigenvalues of the matrix XXXXXX are given as follows:
 
+EQS
+
+
+Here vis are the vibrational frequerncies, eigi are the eigenvalues of H, and mi is the mass 
 
 And they can be used to compute the normal frequencies as follows:
 
@@ -83,7 +86,7 @@ python generate_rport.py <.log filename> <formatted checkpoint filename>
 
 Example, python generate_report opt.log stuff.fchk.
 
-
+python .\free_e_module.py 8 298.15 opt.log Report.txt
 
 
 

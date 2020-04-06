@@ -1,0 +1,4 @@
+add freature to take in file name
+number of fixed atoms
+delete comments
+finish writeup
