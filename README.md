@@ -2,17 +2,85 @@
 scripts to perform frequency analysis and compute free energy of surface species (species with constrained atoms) in Gaussian
 
 
-Gaussian09 has inbuilt features to calculate the free energies (translational, rotational, and vibrational) of gas phase species. However, it does not readily calculate the free energies of species with constrained atoms. An example of this can be when we are trying to calculate the free energy of surface species. The surface is at times represented by a small cluster, where the cluster is capped by terminating atoms and some peripheral atoms of the cluster are held fixed to mimic the rigidity of the surface. Fig. 1 shows a vicinal silica site used to represent a vicinal silanol site on the surface of silica.
 
 
-![](images/silica_site.png)
+
+
+## Introduction
+
+Gaussian09 has inbuilt features to calculate the free energies (translational, rotational, and vibrational) of gas phase species. However, it does not readily calculate the free energies of species with constrained atoms. An example of this can be when we are trying to calculate the free energy of surface species. The surface is at times represented by a small cluster, where the cluster is capped by terminating atoms and some peripheral atoms of the cluster are held fixed to mimic the rigidity of the surface. The figure below shows a vicinal silanol cluster used to represent a vicinal silanol site on the surface of silica.
+
+
+![Vicinal silanol site](images/silica_site.png)
 
 Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (shown in red) are held fixed. To calculate the vibrational free energy we expand the enregy around the minimum (structure corresponding to a local minima) as follows:
 
 
-![](images/silica_site.png)
 
-Here, ∆<strong>x</strong> is the deviation from the minima, <strong>H</strong> is the hessian computed at the minima, and <em>E</em><sub>0</sub> is the energy of the minima.
+![](images/E_expansion.png)
+
+Here, ∆<strong>x</strong> is the deviation from the minima, <strong>H</strong> is the hessian computed at the minima, and <em>E</em><sub>0</sub> is the energy of the minima. H is written as follows:
+
+
+![](images/hessian.png)
+
+
+Here <em>x</em><sub>i</sub> is the ith coordinate. A molecule with N atoms has a total of 3N coordinates. Now, if we divide the hessian matrix into coordinates of peripheral (fixed) and non-peripheral (free) atoms, we get:
+
+
+![](images/hessian_carving.png)
+
+
+Here, the red portion refers to peripheral atoms (fixed) and blue section refers to non-peripheral atoms (free). Only the blue sub-matrix is considered and is hence referred to as the reduced hessian represented as <strong>H</strong><sub>red</sub>.
+
+Following this the hessian is mass weighted and diagonalized as follows:
+
+
+
+
+Here, <em>M</em><sub>i</sub> is the mass of the atom corresponding to coordinate <em>x</em><sub>i</sub>.
+
+Eigenvalues of the matrix XXXXXX are given as follows:
+
+
+And they can be used to compute the normal frequencies as follows:
+
+
+
+Finally, the vibrational frequencies can be used to compute the vibrational partition function as followos:
+
+
+The vibrational partition function can then be used to calculate the vibrational contribution to the free energy:
+
+
+
+
+
+
+
+
+
+
+
+
+## Usage
+
+Codes with functioncs are in g_free_e. And a test example is in the folder tests. 
+
+When running a gaussian calculation generate a checkpoint file and convert it to a formatted checkpoint file using the following:
+
+"checkpoint filename" formchk "formatted checkpoint filename"
+
+
+The formatted checkpoint file contains the second order derivatives (Hessian). Follwing this run the generete_report.py as follows:
+
+python generate_rport.py <.log filename> <formatted checkpoint filename>
+
+Example, python generate_report opt.log stuff.fchk.
+
+
+
+
 
 $\delta$
 
@@ -23,7 +91,7 @@ $\forall x \in X, \quad \exists y \leq \epsilon$
 
 
 # This is an <h1> tag
-## This is an <h2> tag
+
 ###### This is an <h6> tag
 
 
