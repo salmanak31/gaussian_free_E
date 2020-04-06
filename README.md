@@ -22,24 +22,25 @@ Here, ∆<strong>x</strong> is the deviation from the minima, <strong>H</strong>
 
 <img src="images/hessian.png" width=500>
 
-<!-- ![](images/hessian.png) -->
 
-
-Here <em>x</em><sub>i</sub> is the ith coordinate. A molecule with N atoms has a total of 3N coordinates. Now, if we divide the hessian matrix into coordinates of peripheral (fixed) and non-peripheral (free) atoms, we get:
+Here <em>x</em><sub>i</sub> is the ith coordinate. A molecule with N atoms has a total of 3N coordinates. Now, if we divide the hessian matrix into coordinates of peripheral (fixed) and non-peripheral (free) atoms, we can represent it as follows:
 
 <img src="images/hessian_carving.png" width=500>
 
-<!-- ![](images/hessian_carving.png) -->
 
 
-Here, the red portion refers to peripheral atoms (fixed) and blue section refers to non-peripheral atoms (free). Only the blue sub-matrix is considered and is hence referred to as the reduced hessian represented as <strong>H</strong><sub>red</sub>.
+Here, the red portion refers to peripheral atoms (fixed) and blue section refers to non-peripheral atoms (free). To eliminate the effects of the peripheral atoms only the blue sub-matrix is considered and is hence referred to as the reduced hessian represented as <strong>H</strong><sub>red</sub>.
 
-Following this the hessian is mass weighted and diagonalized as follows:
+The reduced hessian is mass weighted and diagonalized as follows:
 
 
+<img src="images/m_weighted_hess.png" width=300>
 
 
 Here, <em>M</em><sub>i</sub> is the mass of the atom corresponding to coordinate <em>x</em><sub>i</sub>.
+
+
+<img src="images/mass_matrix.png" width=500>
 
 Eigenvalues of the matrix XXXXXX are given as follows:
 
