@@ -39,7 +39,7 @@ The reduced hessian is mass weighted and diagonalized as follows:
 <img src="images/mw_hessian.png" width=200>.
 
 
-Here, <strong>M</strong> is the mass matrix
+Here, <strong>H</strong><sub>MW</sub> is the reduced mass-weighted hessian and <strong>M</strong> is the mass matrix represented as
 
 <img src="images/mass_matrix.png" width=500>.
 
