@@ -11,7 +11,9 @@ scripts to perform frequency analysis and compute free energy of surface species
 Gaussian09 has inbuilt features to calculate the free energies (translational, rotational, and vibrational) of gas phase species. However, it does not readily calculate the free energies of species with constrained atoms. An example of this can be when we are trying to calculate the free energy of surface species. The surface is at times represented by a small cluster, where the cluster is capped by terminating atoms and some peripheral atoms of the cluster are held fixed to mimic the rigidity of the surface. The figure below shows a vicinal silanol cluster used to represent a vicinal silanol site on the surface of silica.
 
 
-![Vicinal silanol site](images/silica_site.png)
+
+
+<img src="images/silica_site.png" width=400>
 
 Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (shown in red) are held fixed. To calculate the vibrational free energy we expand the enregy around the minimum (structure corresponding to a local minima) as follows:
 
