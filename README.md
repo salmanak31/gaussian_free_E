@@ -22,12 +22,12 @@ Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (sho
 
 Here, ∆<strong>x</strong> is the deviation from the minima, <strong>H</strong> is the hessian computed at the minima, and <em>E</em><sub>0</sub> is the energy of the minima. H is written as follows:
 
-<img src="images/hessian.png" width=500>
+<img src="images/hessian.png" width=500>.
 
 
-Here <em>x</em><sub>i</sub> is the ith coordinate. A molecule with N atoms has a total of 3N coordinates. Now, if we divide the hessian matrix into coordinates of peripheral (fixed) and non-peripheral (free) atoms, we can represent it as follows:
+Here, <em>x</em><sub>i</sub> is the ith coordinate. A molecule with N atoms has a total of 3N coordinates. Now, if we divide the hessian matrix into coordinates of peripheral (fixed) and non-peripheral (free) atoms, we can represent it as follows:
 
-<img src="images/hessian_carving.png" width=500>
+<img src="images/hessian_carving.png" width=500>.
 
 
 
@@ -36,13 +36,14 @@ Here, the red portion refers to peripheral atoms (fixed) and blue section refers
 The reduced hessian is mass weighted and diagonalized as follows:
 
 
-<img src="images/m_weighted_hess.png" width=200>
+<img src="images/m_weighted_hess.png" width=200>.
 
+
+Here, <strong>M</strong> is the mass matrix
+
+<img src="images/mass_matrix.png" width=500>.
 
 Here, <em>M</em><sub>i</sub> is the mass of the atom corresponding to coordinate <em>x</em><sub>i</sub>.
-
-
-<img src="images/mass_matrix.png" width=500>
 
 Eigenvalues of the matrix XXXXXX are given as follows:
 
