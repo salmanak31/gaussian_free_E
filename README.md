@@ -1,4 +1,4 @@
-# gaussian_free_E
+# Calculating free energies of constrained species in Gaussian
 scripts to perform frequency analysis and compute free energy of surface species (species with constrained atoms) in Gaussian
 
 
