@@ -20,14 +20,14 @@ Here, the cluster is capped by hydrogen atoms. And the peripheral OH groups (sho
 
 Here, ∆<strong>x</strong> is the deviation from the minima, <strong>H</strong> is the hessian computed at the minima, and <em>E</em><sub>0</sub> is the energy of the minima. H is written as follows:
 
-<img src="images/hessian.png" width=400>
+<img src="images/hessian.png" width=500>
 
 <!-- ![](images/hessian.png) -->
 
 
 Here <em>x</em><sub>i</sub> is the ith coordinate. A molecule with N atoms has a total of 3N coordinates. Now, if we divide the hessian matrix into coordinates of peripheral (fixed) and non-peripheral (free) atoms, we get:
 
-<img src="images/hessian_carving.png" width=400>
+<img src="images/hessian_carving.png" width=500>
 
 <!-- ![](images/hessian_carving.png) -->
 
