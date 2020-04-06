@@ -34,7 +34,7 @@ Here, the red portion refers to peripheral atoms (fixed) and blue section refers
 The reduced hessian is mass weighted and diagonalized as follows:
 
 
-<img src="images/m_weighted_hess.png" width=300>
+<img src="images/m_weighted_hess.png" width=200>
 
 
 Here, <em>M</em><sub>i</sub> is the mass of the atom corresponding to coordinate <em>x</em><sub>i</sub>.
