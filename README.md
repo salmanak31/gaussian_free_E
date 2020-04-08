@@ -46,19 +46,36 @@ Here, <strong>H</strong><sub>MW</sub> is the reduced mass-weighted hessian and <
 Here, <em>M</em><sub>i</sub> is the mass of the atom corresponding to coordinate <em>x</em><sub>i</sub>. Following this the normal vibrational frequencies can be calculated using the eigenvalues of <strong>H</strong><sub>MW</sub> 
 
 
-EQS
+<img src="images/vib_eigen.png" width=200>.
 
 
-Here vis are the vibrational frequerncies, eigi are the eigenvalues of H, and mi is the mass 
-
-And they can be used to compute the normal frequencies as follows:
+Here ν<sub>i</sub> is the freq1uency of vibration of the ith normal mode and ε<sub>i</sub> is the ith eigenvalue of <strong>H</strong><sub>MW</sub>
 
 
+The vibrational frequencies can be used to compute the ith vibrational partition function as follows:
 
-Finally, the vibrational frequencies can be used to compute the vibrational partition function as followos:
+
+<img src="images/q_vib.png" width=200>.
+
+The total vibrational partition function is written as the product of the individual partition functions
 
 
-The vibrational partition function can then be used to calculate the vibrational contribution to the free energy:
+<img src="images/total_vib.png" width=200>.
+
+
+The vibrational partition function can then be used to calculate the vibrational contribution to the free energy
+
+
+<img src="images/vib_free_e.png" width=200>.
+
+
+
+
+
+
+
+
+
 
 
 
