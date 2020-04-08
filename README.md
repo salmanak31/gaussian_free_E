@@ -77,7 +77,7 @@ Place all the atoms to be fixed at the end in the Guassian input file (opt.gjf).
 
 When running a gaussian calculation generate a checkpoint file and convert it to a formatted checkpoint file using the following:
 
-`"checkpoint filename" formchk "formatted checkpoint filename"`
+`<checkpoint filename> formchk <formatted checkpoint filename>`
 
 
 The formatted checkpoint file contains the second order derivatives (Hessian). Following this run the generete_report.py as follows:
@@ -87,3 +87,5 @@ The formatted checkpoint file contains the second order derivatives (Hessian). F
 For example, 
 
 `python .\free_e_module.py 8 298.15 opt.log Report.txt`
+
+The output file reports to total free energy, enthalpy, entropy and normal vibrational frequencies.
