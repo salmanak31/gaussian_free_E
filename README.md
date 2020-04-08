@@ -55,7 +55,7 @@ Here ν<sub>i</sub> is the freq1uency of vibration of the ith normal mode and ε
 The vibrational frequencies can be used to compute the ith vibrational partition function as follows:
 
 
-<img src="images/q_vib.png" width=200>.
+<img src="images/q_vib.png" width=150>.
 
 The total vibrational partition function is written as the product of the individual partition functions
 
