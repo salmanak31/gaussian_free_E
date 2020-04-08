@@ -46,7 +46,7 @@ Here, <strong>H</strong><sub>MW</sub> is the reduced mass-weighted hessian and <
 Here, <em>M</em><sub>i</sub> is the mass of the atom corresponding to coordinate <em>x</em><sub>i</sub>. Following this the normal vibrational frequencies can be calculated using the eigenvalues of <strong>H</strong><sub>MW</sub> 
 
 
-<img src="images/vib_eigen.png" width=200>.
+<img src="images/vib_eigen.png" width=150>.
 
 
 Here ν<sub>i</sub> is the freq1uency of vibration of the ith normal mode and ε<sub>i</sub> is the ith eigenvalue of <strong>H</strong><sub>MW</sub>
@@ -55,7 +55,7 @@ Here ν<sub>i</sub> is the freq1uency of vibration of the ith normal mode and ε
 The vibrational frequencies can be used to compute the ith vibrational partition function as follows:
 
 
-<img src="images/q_vib.png" width=150>.
+<img src="images/q_vib.png" width=200>.
 
 The total vibrational partition function is written as the product of the individual partition functions
 
