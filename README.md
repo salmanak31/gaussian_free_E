@@ -89,3 +89,9 @@ For example,
 `python .\free_e_module.py 8 298.15 opt.log Report.txt`
 
 The output file reports to total free energy, enthalpy, entropy and normal vibrational frequencies.
+
+
+## References
+
+[1] F. Jensen. Introduction to Computational Chemistry. Wiley (1999)
+
